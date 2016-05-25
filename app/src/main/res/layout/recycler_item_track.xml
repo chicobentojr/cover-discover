@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="br.com.franciscobento.coverdiscover.activity.ResultadoActivity">
+
+
+    <ImageView
+        android:id="@+id/imgCover"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@id/imgCover"
+        android:text="I am a Mess"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblName"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@id/imgCover"
+        android:text="Thiking out Loud" />
+
+    <TextView
+        android:id="@+id/lblArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/lblAlbum"
+        android:text="Ed Sheeran" />
+
+</RelativeLayout>
