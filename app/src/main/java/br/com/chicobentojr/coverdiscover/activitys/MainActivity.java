@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         tracks = Track.getAll(this, null);
-        adapter = new TrackAdapter(tracks);
+        adapter = new TrackAdapter(this, tracks);
         recyclerView.setAdapter(adapter);
     }
 }
